@@ -11,7 +11,7 @@ Um jogo de terminal feito em Python para testar seus conhecimentos em operaçõe
   - ➖ Subtração
   - ✖️ Multiplicação
   - ➗ Divisão
-  - 
+  
 - Escolha quantas perguntas quer responder.
 - Receba feedback imediato se acertou ou errou.
 - Veja seu desempenho no final.
