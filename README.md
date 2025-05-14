@@ -26,4 +26,3 @@ Um jogo de terminal feito em Python para testar seus conhecimentos em operaçõe
 1. Clone o repositório:
    bash
    git clone https://github.com/Rafas21/table_of_accounts.git
-   cd table_of_accounts
