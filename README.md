@@ -1,5 +1,3 @@
-✖️ Table Of Accounts ✔️
-
 🧠 Jogo de Perguntas Matemáticas
 
 Um jogo de terminal feito em Python para testar seus conhecimentos em operações matemáticas básicas. Escolha o tipo de operação, responda quantas perguntas quiser e veja sua pontuação final. Ideal para praticar lógica, aprender Python e se divertir ao mesmo tempo!
