@@ -26,5 +26,5 @@ Um jogo de terminal feito em Python para testar seus conhecimentos em operaçõe
 
 1. Clone o repositório:
    bash
-   git clone https://github.com/seu-usuario/nome-do-repo.git
-   cd nome-do-repo
+   git clone https://github.com/Rafas21/table_of_accounts.git
+   cd table_of_accounts
