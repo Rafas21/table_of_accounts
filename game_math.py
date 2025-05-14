@@ -12,12 +12,14 @@ def escolher_operacao():
     print("2 - Subtração (-)")
     print("3 - Multiplicação (*)")
     print("4 - Divisão (/)")
+    print()
     
     while True:
-        escolha = input("Digite o número da operação desejada: ")
-        operacoes = {'1': '+', '2': '-', '3': '*', '4': '/'}
-        if escolha in operacoes:
-            return operacoes[escolha]
+        choice = input("Digite o número da operação desejada: ")
+        print()
+        operations = {'1': '+', '2': '-', '3': '*', '4': '/'}
+        if choice in operations:
+            return operations[choice]
         print("Opção inválida. Escolha entre 1 e 4.")
 
 def gerar_pergunta(operacao):
@@ -29,13 +31,15 @@ def gerar_pergunta(operacao):
         num1 = num1 * num2 
 
     print(f'{num1} {operacao} {num2} = ?')
+    print()
     return num1, num2
 
 def obter_resposta_usuario():
 
-    resposta = input('Digite a resposta: ')
+    response = input('Digite a resposta: ')
     try:
-        return float(resposta)
+        print()
+        return float(response)
     except ValueError:
         print('Entrada inválida! Digite um número.')
         return None
@@ -52,7 +56,7 @@ def calcular_resposta(num1, num2, operacao):
 
 def jogar_rodada():
 
-    operacao = escolher_operacao()
+    operation = escolher_operacao()
 
     while True:
         try:
@@ -69,34 +73,34 @@ def jogar_rodada():
             print("Entrada inválida. Digite um número inteiro.")
 
 
-    acertos = 0
+    correct_answers = 0
 
     for _ in range(total):
-        num1, num2 = gerar_pergunta(operacao)
-        resposta_usuario = obter_resposta_usuario()
+        num1, num2 = gerar_pergunta(operation)
+        response_user = obter_resposta_usuario()
 
-        if resposta_usuario is None:
+        if response_user is None:
             limpar_tela()
             continue
 
-        resposta_correta = calcular_resposta(num1, num2, operacao)
+        correct_answer = calcular_resposta(num1, num2, operation)
 
-        if abs(resposta_usuario - resposta_correta) < 0.01:
+        if abs(response_user - correct_answer) < 0.01:
             print("Resposta correta!")
-            acertos += 1
+            correct_answers += 1
         else:
-            print(f"Resposta incorreta! A resposta correta é {resposta_correta:.2f}")
+            print(f"Resposta incorreta! A resposta correta é {correct_answer:.2f}")
         print()
 
-        print(f'Você acertou {acertos} de {total} questões!')
+    print(f'Você acertou {correct_answers} de {total} questões!')
 
 def perguntar_se_deseja_sair():
 
     while True:
-        escolha = input('Deseja sair? [s]im ou [n]ão: ').strip().lower()
-        if escolha.startswith('s'):
+        choice = input('Deseja sair? [s]im ou [n]ão: ').strip().lower()
+        if choice.startswith('s'):
             return True
-        elif escolha.startswith('n'):
+        elif choice.startswith('n'):
             limpar_tela()
             return False
         else:
