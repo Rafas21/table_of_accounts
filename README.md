@@ -19,8 +19,11 @@ Um jogo de terminal feito em Python para testar seus conhecimentos em operaçõe
 
 - [Python 3](https://www.python.org/)
 
+  
+
 🔧 Como rodar localmente no VS Code
 Siga os passos abaixo para clonar o projeto e rodar no seu ambiente local com o VS Code.
+
 
 ✅ Pré-requisitos
 Python 3.x instalado
@@ -31,8 +34,10 @@ Visual Studio Code (VS Code) instalado
 
 Extensão do Python no VS Code (recomendado)
 
+
 📝 Passo a passo
 Clone o repositório
+
 
 No GitHub, clique no botão verde Code e copie o link HTTPS do repositório.
 Em seguida, abra o terminal (ou o VS Code) e digite:
